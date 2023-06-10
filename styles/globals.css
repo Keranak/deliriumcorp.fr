@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Coloryson';
+  src: url('/coloryson.ttf');
+}
+
+:root{
+  --background : #161616;
+  --backgroundWhite : #f9f9f9;
+  --backgroundBlack : #161616;
+  --colorButton : #EB4040;
+  --colorTextButton : #f9f9f9;
+  --colorTextWhite : #f9f9f9;
+  --colorTextBlack : #161616;
+}
+/* Styles pour centrer le contenu */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Styles pour rendre le contenu responsive */
+.container {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Autres styles spécifiques à votre contenu */
+
+
+body{
+  background-color: var(--background);
+  color: var(--colorTextWhite);
+  width: 100vh;
+}
+h1,h2,h3{
+  font-family: 'Coloryson';
+  font-size: 3rem;
+}
+p{
+  font-family: 'Outfit', sans-serif;
+}
+
+.bgBlack{
+  background-color: var(--backgroundBlack);
+}
+
+.textWhite{
+  color: var(--colorTextWhite);
+}
+.textBlack{
+  color: var(--colorTextBlack);
+} 
+
+
+.whiteSection{
+  background-color: var(--backgroundWhite);
+  color: var(--colorTextBlack);
+  width: 100vh;
+}
+.vague{
+  background-image: url('/vague.svg');
+  rotate: 180deg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: auto;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  color: #d1d5db;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  color: #d1d5db;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+}
