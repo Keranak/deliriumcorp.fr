@@ -16,6 +16,8 @@ const Navbar: React.FC = () => {
     { title: 'Accueil', url: '/' },
     { title: 'À propos', url: '/apropos' },
     { title: 'Contact', url: '/contact' },
+    { title: 'Connexion', url: '/signin' },
+    { title: 'Inscription', url: '/signup'}
   ];
 
   return (
