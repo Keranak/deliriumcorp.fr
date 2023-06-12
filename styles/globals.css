@@ -68,6 +68,10 @@ nav {
   height: 24px;
 }
 
+.navbar-container{
+  background-color: var(--background);
+}
+
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none;

@@ -1,12 +1,18 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import Slider from '@/src/components/slider'
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const reviews = [
+    { id: 1, name: "John Doe", comment: "Great product!" },
+    { id: 2, name: "Jane Smith", comment: "Excellent service!" },
+    { id: 3, name: "Alice Johnson", comment: "Highly recommended!" },
+  ];
   return(
     
 
@@ -90,23 +96,8 @@ export default function Home() {
         <section className="slideComments whiteSection container" >
           <Image src="/LES_SURVIVANTS.png" alt="avis" width={142.51} height={247} className='center'/>
           {/*Slider des avis laissé par les clients*/}
-          <div className="slide">
-            <div className="slideContent">
-              <div className="slideText">
-                <p className="slideText">Une très belle expérience qui a soudé l’équipe ! On a observé une belle cohésion.</p>
-                <p className="slideText">Enora JOHNSON</p>
-              </div>
-              <div className="slideText">
-                <p className="slideText">Une très belle expérience qui a soudé l’équipe ! On a observé une belle cohésion.</p>
-                <p className="slideText">Enora JOHNSON</p>
-              </div>
-              <div className="slideText">
-                <p className="slideText">Une très belle expérience qui a soudé l’équipe ! On a observé une belle cohésion.</p>
-                <p className="slideText">Enora JOHNSON</p>
-              </div>
-
-            </div>
-          </div>
+          <Slider reviews={reviews}/>
+          
           
         </section>
 
