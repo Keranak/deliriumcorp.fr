@@ -16,7 +16,7 @@ export default function Document() {
         <NextScript />
         <Footer />
       </body>
-    <Matomo />
+    
     </Html>
   )
 }
