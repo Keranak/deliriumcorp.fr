@@ -22,6 +22,7 @@ body{
   color: var(--colorTextWhite);
   font-family: 'Coloryson', sans-serif;
   width: 100%;
+  text-align: center;
 }
 
 
