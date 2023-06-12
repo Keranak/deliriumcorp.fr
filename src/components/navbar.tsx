@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   return (
     <nav>
       <div className="navbar-container">
-        <div className="logo"><img src="/LOGO_DELIRIUM" alt="logo de delirium" /></div>
+        <div className="logo"><img src="/LOGO_DELIRIUM.png" alt="logo de delirium" /></div>
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link, index) => (
             <li key={index}>
