@@ -20,18 +20,20 @@ const Navbar: React.FC = () => {
 
   return (
     <nav>
-      <div className="logo"><img src="/LOGO_DELIRIUM.png" alt="logo Délirium" /></div>
-      <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        {navLinks.map((link, index) => (
-          <li key={index}>
-            <a href={link.url}>{link.title}</a>
-          </li>
-        ))}
-      </ul>
-      <div className="burger" onClick={toggleMenu}>
-        <div className={`line ${isMenuOpen ? 'line-1-active' : ''}`}></div>
-        <div className={`line ${isMenuOpen ? 'line-2-active' : ''}`}></div>
-        <div className={`line ${isMenuOpen ? 'line-3-active' : ''}`}></div>
+      <div className="navbar-container">
+        <div className="logo">Logo</div>
+        <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <a href={link.url}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
+        <div className="burger" onClick={toggleMenu}>
+          <div className={`line ${isMenuOpen ? 'line-1-active' : ''}`}></div>
+          <div className={`line ${isMenuOpen ? 'line-2-active' : ''}`}></div>
+          <div className={`line ${isMenuOpen ? 'line-3-active' : ''}`}></div>
+        </div>
       </div>
     </nav>
   );
