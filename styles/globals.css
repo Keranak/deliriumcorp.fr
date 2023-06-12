@@ -16,87 +16,123 @@
   --colorTextWhite : #f9f9f9;
   --colorTextBlack : #161616;
 }
-/* Styles pour centrer le contenu */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-/* Styles pour rendre le contenu responsive */
-.container {
-  max-width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-/* Autres styles spécifiques à votre contenu */
-
 
 body{
   background-color: var(--background);
   color: var(--colorTextWhite);
-  width: 100vh;
-}
-h1,h2,h3{
-  font-family: 'Coloryson';
-  font-size: 3rem;
-}
-p{
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Coloryson', sans-serif;
 }
 
-.bgBlack{
-  background-color: var(--backgroundBlack);
-}
-
-.textWhite{
-  color: var(--colorTextWhite);
-}
-.textBlack{
-  color: var(--colorTextBlack);
-} 
 
 
-.whiteSection{
-  background-color: var(--backgroundWhite);
-  color: var(--colorTextBlack);
-  width: 100vh;
-}
-.vague{
-  background-image: url('/vague.svg');
-  rotate: 180deg;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100px;
-  width: auto;
+/***********NAVBAR*************/
+/* Styles pour le header */
+header {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem;
 }
 
-.footer-link {
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > div > div {
+  display: flex;
+  align-items: center;
+}
+
+header > div > div:first-child {
+  margin-right: 1rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav span {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+header div.md\\:hidden {
+  display: none;
+}
+
+header div.md\\:block {
+  display: block;
+}
+
+header div.md\\:hidden button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles pour le menu burger */
+header div.md\\:hidden nav {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+header div.md\\:hidden nav span {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+
+/* Styles pour le footer */
+footer {
+  background-color: #1f2937;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  margin-left: 1.5rem;
+}
+
+nav li {
+  margin-right: 1rem;
+  display: inline-block; /* Ajout de la propriété pour aligner les liens horizontalement */
+}
+
+nav a {
   display: flex;
   align-items: center;
   color: #d1d5db;
-  transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
-.footer-link:hover {
-  color: #ffffff;
-}
-
-.social-icons a {
-  display: inline-flex;
+/* Styles pour les icônes du footer */
+footer > div:last-child ul {
+  display: flex;
   align-items: center;
+  margin-left: 1rem;
+}
+
+footer > div:last-child li {
+  margin-right: 0.5rem;
+}
+
+footer > div:last-child a {
   color: #d1d5db;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #ffffff;
-}
-
-.social-icons svg {
-  width: 24px;
-  height: 24px;
+  font-size: 1.2rem;
 }

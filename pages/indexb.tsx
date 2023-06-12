@@ -11,7 +11,7 @@ export default function Home() {
     
 
     <main>
-      <section className="bgBlack container">
+      <section className="bgBlack">
       <h3 className='h3 textWhite'>Explorez l'adrénaline, renforcez vos liens.</h3>
       <p className='textWhite'>Dépassez vos peurs et plongez dans nos palpitants survival
       game et testez vos limites !</p>
@@ -21,7 +21,7 @@ export default function Home() {
           
       </section>
 
-      <section className="quiSommesNous whiteSection container">
+      <section className="quiSommesNous whiteSection">
       <figure className='vague'> </figure>
 
         <Image src="/QUI-SOMMES-NOUS.png" alt="qui sommes nous ?" width={142.51} height={247} className='center'/>
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="nosJeux container">
+      <section className="nosJeux">
         <Image src="/NOS_JEUX.png" alt="nos jeux" width={142.51} height={247} className='center'/>
         <div className="text">
           <p>La Délirium corp, organisera le kidnapping de vos équipes à la sortie de vos bureaux. </p>
@@ -87,7 +87,7 @@ export default function Home() {
 
         </section>
 
-        <section className="slideComments whiteSection container" >
+        <section className="slideComments whiteSection">
           <Image src="/LES_SURVIVANTS.png" alt="avis" width={142.51} height={247} className='center'/>
           {/*Slider des avis laissé par les clients*/}
           <div className="slide">
