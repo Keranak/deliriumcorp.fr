@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   return (
     <nav>
       <div className="navbar-container">
-        <div className="logo"><img src="/LOGO_DELIRIUM.png" alt="logo de delirium" /></div>
+        <img src="/LOGO_DELIRIUM.png" alt="logo de delirium" className="logo" />
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link, index) => (
             <li key={index}>
@@ -29,10 +29,8 @@ const Navbar: React.FC = () => {
             </li>
           ))}
         </ul>
-        <div className="burger" onClick={toggleMenu}>
-          <div className={`line ${isMenuOpen ? 'line-1-active' : ''}`}></div>
-          <div className={`line ${isMenuOpen ? 'line-2-active' : ''}`}></div>
-          <div className={`line ${isMenuOpen ? 'line-3-active' : ''}`}></div>
+        <div className={`burger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <img src="/MENU_BURGER.png" alt="menu burger" />
         </div>
       </div>
     </nav>
