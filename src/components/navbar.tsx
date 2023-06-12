@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+
+interface NavLink {
+  title: string;
+  url: string;
+}
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,82 +12,28 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  return (
-    <header className="bg-gray-800 text-white container">
-      <div className="hidden md:block">
-        <nav className="ml-10 space-x-4">
-          <div className="container mx-auto py-4 flex items-center justify-between">
-            <div>
-              <Image src="/LOGO_DELIRIUM.png" alt="logo" width={300} height={300} />
-            </div>
-            <div className="md:hidden">
-              <button
-                className="focus:outline-none"
-                onClick={toggleMenu}
-              >
-                <Image src="/MENU_BURGER.png" alt="Menu Burger" width={40} height={40} />
-              </button>
-            </div>
-          </div>
-          <Link href="/" passHref>
-            <span className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-              Accueil
-            </span>
-          </Link>
-          <Link href="/about" passHref>
-            <span className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-              À propos de nous
-            </span>
-          </Link>
-          <Link href="/contact" passHref>
-            <span className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-              Nous contacter
-            </span>
-          </Link>
-          <Link href="/login" passHref>
-            <span className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-              Connexion
-            </span>
-          </Link>
-          <Link href="/register" passHref>
-            <span className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
-              Inscription
-            </span>
-          </Link>
-        </nav>
-      </div>
+  const navLinks: NavLink[] = [
+    { title: 'Accueil', url: '/' },
+    { title: 'À propos', url: '/apropos' },
+    { title: 'Contact', url: '/contact' },
+  ];
 
-      {/* Menu burger */}
-      <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
-        <nav className="px-2 pt-2 pb-3 space-y-1">
-          <Link href="/" passHref>
-            <span className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-              Accueil
-            </span>
-          </Link>
-          <Link href="/about" passHref>
-            <span className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-              À propos de nous
-            </span>
-          </Link>
-          <Link href="/contact" passHref>
-            <span className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-              Nous contacter
-            </span>
-          </Link>
-          <Link href="/login" passHref>
-            <span className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-              Connexion
-            </span>
-          </Link>
-          <Link href="/register" passHref>
-            <span className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium cursor-pointer">
-              Inscription
-            </span>
-          </Link>
-        </nav>
+  return (
+    <nav>
+      <div className="logo"><img src="/LOGO_DELIRIUM.png" alt="logo Délirium" /></div>
+      <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+        {navLinks.map((link, index) => (
+          <li key={index}>
+            <a href={link.url}>{link.title}</a>
+          </li>
+        ))}
+      </ul>
+      <div className="burger" onClick={toggleMenu}>
+        <div className={`line ${isMenuOpen ? 'line-1-active' : ''}`}></div>
+        <div className={`line ${isMenuOpen ? 'line-2-active' : ''}`}></div>
+        <div className={`line ${isMenuOpen ? 'line-3-active' : ''}`}></div>
       </div>
-    </header>
+    </nav>
   );
 };
 
