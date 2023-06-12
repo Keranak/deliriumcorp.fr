@@ -28,7 +28,7 @@ body{
 /***********NAVBAR*************/
 /* Styles pour le header */
 header {
-  background-color: #1f2937;
+  background-color: var(--background);
   color: #fff;
   padding: 1rem;
 }
@@ -92,7 +92,7 @@ header div.md\\:hidden nav span {
 
 /* Styles pour le footer */
 footer {
-  background-color: #1f2937;
+  background-color: var(--background);
   color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -136,3 +136,29 @@ footer > div:last-child a {
   color: #d1d5db;
   font-size: 1.2rem;
 }
+
+/*************Body**************/
+
+/* Styles pour la section hero */
+/*Le texte est à gauche et l'image sur la droite*/
+section.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+section.hero > div:first-child {
+  flex: 1;
+}
+
+section.hero > div:last-child {
+  flex: 1;
+}
+
+section.hero > div:last-child img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styles pour la section features */
