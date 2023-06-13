@@ -182,7 +182,7 @@ section.hero > div:last-child img {
 }
 
 /* Styles pour la section features */
-.container {
+.container-adrenaline {
   display: flex;
   align-items: center;
 }

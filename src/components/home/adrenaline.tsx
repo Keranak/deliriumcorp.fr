@@ -5,7 +5,7 @@ import Image from "next/image";
 function Adrenaline() {
     return (
         <section className="bgBlack">
-        <div className="container">
+        <div className="container-adrenaline container">
           <aside>
             <div className="text-container text-adrenaline">
               <h3 className="h2 textWhite">Explorez l'adrénaline, renforcez vos liens.</h3>
