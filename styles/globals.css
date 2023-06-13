@@ -193,12 +193,12 @@ aside {
   align-items: center;
 }
 
-.text-container {
+.text-adrenaline {
   margin-right: 20px; /* Ajustez cette valeur selon vos besoins */
   text-align: left;
 }
 
-.image-container {
+.adrenaline-image-container {
   text-align: right;
   margin-left: 20px; /* Ajustez cette valeur selon vos besoins */
 }
