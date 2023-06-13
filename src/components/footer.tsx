@@ -15,32 +15,33 @@ const Footer = () => {
 <nav className="ml-6">
   <ul className="flex flex-col sm:flex-row">
     <li className="my-1 sm:my-0 sm:mr-4">
-      <a href="/" className="text-gray-300 hover:text-white">
+      <a href="/" className="text-sm sm:text-base text-gray-300 hover:text-white">
         Accueil
       </a>
     </li>
     <li className="my-1 sm:my-0 sm:mr-4">
-      <a href="/connexion" className="text-gray-300 hover:text-white">
+      <a href="/connexion" className="text-sm sm:text-base text-gray-300 hover:text-white">
         Connexion
       </a>
     </li>
     <li className="my-1 sm:my-0 sm:mr-4">
-      <a href="/inscription" className="text-gray-300 hover:text-white">
+      <a href="/inscription" className="text-sm sm:text-base text-gray-300 hover:text-white">
         Inscription
       </a>
     </li>
     <li className="my-1 sm:my-0 sm:mr-4">
-      <a href="/contact" className="text-gray-300 hover:text-white">
+      <a href="/contact" className="text-sm sm:text-base text-gray-300 hover:text-white">
         Contact
       </a>
     </li>
     <li className="my-1 sm:my-0">
-      <a href="/apropos" className="text-gray-300 hover:text-white">
+      <a href="/apropos" className="text-sm sm:text-base text-gray-300 hover:text-white">
         À propos de nous
       </a>
     </li>
   </ul>
 </nav>
+
 
 
         <br />
