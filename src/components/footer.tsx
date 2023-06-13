@@ -47,7 +47,7 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-
+          <br />
         <div className="ml-6">
           <ul className="flex">
             <li className="mr-2">

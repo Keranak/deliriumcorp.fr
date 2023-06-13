@@ -234,3 +234,8 @@ iframe, Image, .titleImage{
     flex-direction: column;
   }
 }
+@media screen and (max-width: 768px) {
+  footer > div {
+    flex-direction: column;
+  }
+}
