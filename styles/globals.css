@@ -32,7 +32,8 @@ body{
   background-image: url(/fond_haut_de_page.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+
   z-index: 1;
 }
 
