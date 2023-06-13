@@ -18,13 +18,31 @@
 }
 
 body{
-  background-color: var(--background);
   color: var(--colorTextWhite);
   font-family: 'Coloryson', sans-serif;
   width: 100%;
   text-align: center;
 }
+.quiSommesNous{
+  background-color: var(--backgroundWhite);
+  color: var(--colorTextBlack);
+}
 
+.bgBlack{
+  background-image: url(/public/vague.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slideComments{
+  background-color: var(--backgroundWhite);
+  color: var(--colorTextBlack);
+}
+.nosJeux{
+  background-color: var(--backgroundBlack);
+  color: var(--colorTextWhite);
+}
 
 
 /***********NAVBAR*************/
@@ -105,11 +123,14 @@ nav {
   }
 }
 
-
+.nosJeux{
+  background-color: var(--backgroundWhite);
+  color: var(--colorTextBlack);
+}
 
 /* Styles pour le footer */
 footer {
-  background-image: url(/public/vague.svg);
+  background-color: var(--backgroundBlack);
   color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -189,11 +210,5 @@ footer > div:last-child a {
 
 .textWhite {
   color: white; 
-}
-
-
-.quiSommesNous{
-  background-color: var(--backgroundWhite);
-  color: var(--colorTextBlack);
 }
 
