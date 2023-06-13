@@ -193,3 +193,8 @@ footer > div:last-child a {
 .textWhite {
   color: white; 
 }
+
+
+.quiSommesNous{
+  background-color: var(--backgroundWhite);
+}
