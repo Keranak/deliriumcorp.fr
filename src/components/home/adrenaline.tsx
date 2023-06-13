@@ -16,7 +16,6 @@ function Adrenaline() {
             </div>
           </aside>
         </div>
-        <Image className="vague" src="/vague.png" alt="vague" width={175.35} height={197.73} />
       </section>
       
        
