@@ -12,8 +12,8 @@ const Footer = () => {
           width={142.51}
           height={247}
         />
-<nav className="ml-6">
-  <ul className="flex flex-col sm:flex-row">
+<nav className="ml-6 flex flex-col" >
+  <ul className="flex flex-col sm:flex-col">
     <li className="my-1 sm:my-0 sm:mr-4">
       <a href="/" className="text-sm sm:text-base text-gray-300 hover:text-white">
         Accueil
