@@ -47,6 +47,9 @@ body{
 }
 .vague{
   background-image: url('/vague.svg');
+  rotate: 180deg;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
