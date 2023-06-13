@@ -6,11 +6,7 @@
   font-family: 'Coloryson';
   src: url('/coloryson.ttf');
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 :root{
   --background : #161616;
