@@ -158,7 +158,7 @@ footer > div:last-child a {
 }
 
 /*************Body**************/
-  
+
 
 /* Styles pour la section features */
 .container-adrenaline {
@@ -170,6 +170,7 @@ footer > div:last-child a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .text-adrenaline {
