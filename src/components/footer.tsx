@@ -12,41 +12,36 @@ const Footer = () => {
           width={142.51}
           height={247}
         />
+<nav className="ml-6">
+  <ul className="flex flex-col sm:flex-row">
+    <li className="my-2 sm:mr-4 sm:my-0">
+      <a href="/" className="text-gray-300 hover:text-white">
+        Accueil
+      </a>
+    </li>
+    <li className="my-2 sm:mr-4 sm:my-0">
+      <a href="/connexion" className="text-gray-300 hover:text-white">
+        Connexion
+      </a>
+    </li>
+    <li className="my-2 sm:mr-4 sm:my-0">
+      <a href="/inscription" className="text-gray-300 hover:text-white">
+        Inscription
+      </a>
+    </li>
+    <li className="my-2 sm:mr-4 sm:my-0">
+      <a href="/contact" className="text-gray-300 hover:text-white">
+        Contact
+      </a>
+    </li>
+    <li className="my-2 sm:my-0">
+      <a href="/apropos" className="text-gray-300 hover:text-white">
+        À propos de nous
+      </a>
+    </li>
+  </ul>
+</nav>
 
-        <nav className="ml-6 flex flex-col sm:flex-row">
-          <ul className="flex flex-col sm:flex-row">
-            <li className="mr-4">
-              <a href="/" className="flex items-center text-gray-300 hover:text-white">
-                
-                Accueil
-              </a>
-            </li>
-            <li className="mr-4">
-              <a href="/connexion" className="flex items-center text-gray-300 hover:text-white">
-                
-                Connexion
-              </a>
-            </li>
-            <li className="mr-4">
-              <a href="/inscription" className="flex items-center text-gray-300 hover:text-white">
-                
-                Inscription
-              </a>
-            </li>
-            <li className="mr-4">
-              <a href="/contact" className="flex items-center text-gray-300 hover:text-white">
-                
-                Contact
-              </a>
-            </li>
-            <li>
-              <a href="/apropos" className="flex items-center text-gray-300 hover:text-white">
-                
-                À propos de nous
-              </a>
-            </li>
-          </ul>
-        </nav>
         <br />
         <div className="ml-6">
           <ul className="flex">
