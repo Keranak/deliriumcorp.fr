@@ -173,7 +173,7 @@ footer > div:last-child li {
 
 footer > div:last-child a {
   color: #d1d5db;
-  font-size: 1.2rem;
+  font-size: 10px;
 }
 
 
@@ -222,4 +222,5 @@ iframe, Image, .titleImage{
 footer nav {
   flex-direction: column;
   display: flex;
+  font-size: 10px;
 }
