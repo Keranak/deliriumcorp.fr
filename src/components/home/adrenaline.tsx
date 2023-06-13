@@ -16,7 +16,7 @@ function Adrenaline() {
             </div>
           </aside>
         </div>
-        <figure className="vague"></figure>
+        <figure className="vague"><Image src="/vague.svg" alt="vague"/></figure>
       </section>
        
     )
