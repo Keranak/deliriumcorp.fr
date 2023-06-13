@@ -7,7 +7,6 @@ export default function HomeA() {
     return (
         <main>
         <Adrenaline />
-        <figure className="vague"></figure>
         <QuiSommesNous />
         <NosJeux />
         <Comments />

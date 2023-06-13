@@ -45,15 +45,7 @@ body{
   background-color: var(--backgroundBlack);
   color: var(--colorTextWhite);
 }
-.vague{
-  background-image: url('/vague.svg');
-  rotate: 180deg;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100px;
-  width: 100%;
-  z-index: 1;
-}
+
 
 
 /***********NAVBAR*************/
