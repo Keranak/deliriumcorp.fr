@@ -7,7 +7,7 @@ function  QuiSommesNous(){
         <div className="container">
       <figure className='vague'> </figure>
 
-        <Image src="/QUI-SOMMES-NOUS.png" alt="qui sommes nous ?" width={142.51} height={247} className='center'/>
+        <Image src="/QUI-SOMMES-NOUS.png" alt="qui sommes nous ?" width={142.51} height={247}  className='center'/>
         <div className="text">
           <p>
           Delirium Corp, une entreprise énigmatique, se distinguait par son objectif audacieux : repousser les limites de l'expérience humaine à travers des aventures extrêmes.
