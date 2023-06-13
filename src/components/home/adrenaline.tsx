@@ -6,7 +6,7 @@ function Adrenaline() {
     return (
         <section className="bgBlack">
         <div className="container-adrenaline container">
-          <aside>
+          <aside className="aside">
             <div className="text-container text-adrenaline">
               <h3 className="h2 textWhite">Explorez l'adrénaline, renforcez vos liens.</h3>
               <p className="textWhite">Dépassez vos peurs et plongez dans nos palpitants survival game et testez vos limites !</p>

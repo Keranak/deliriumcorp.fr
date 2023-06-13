@@ -158,28 +158,7 @@ footer > div:last-child a {
 }
 
 /*************Body**************/
-
-/* Styles pour la section hero */
-/*Le texte est à gauche et l'image sur la droite*/
-section.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 1rem;
-}
-
-section.hero > div:first-child {
-  flex: 1;
-}
-
-section.hero > div:last-child {
-  flex: 1;
-}
-
-section.hero > div:last-child img {
-  width: 100%;
-  height: auto;
-}
+  
 
 /* Styles pour la section features */
 .container-adrenaline {
@@ -187,26 +166,26 @@ section.hero > div:last-child img {
   align-items: center;
 }
 
-aside {
+.aside {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .text-adrenaline {
-  margin-right: 20px; /* Ajustez cette valeur selon vos besoins */
+  margin-right: 20px;
   text-align: left;
 }
 
 .adrenaline-image-container {
   text-align: right;
-  margin-left: 20px; /* Ajustez cette valeur selon vos besoins */
+  margin-left: 20px; 
 }
 
 .h3 {
-  margin-bottom: 10px; /* Ajustez cette valeur selon vos besoins */
+  margin-bottom: 10px; 
 }
 
 .textWhite {
-  color: white; /* Couleur du texte, ajustez selon vos besoins */
+  color: white; 
 }
