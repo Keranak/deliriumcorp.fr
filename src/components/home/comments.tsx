@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Slider from "@/src/components/slider";
 
 function Comments(){
@@ -12,8 +11,8 @@ function Comments(){
     return(
         <section className="slideComments whiteSection" >
         <div className="container">
-        <Image src="/LES_SURVIVANTS.png" alt="avis"  width={142.51} height={247}  className='center'/>
-        {/*Slider des avis laissé par les clients*/}
+        <Image src="/LES_SURVIVANTS.png" alt="avis"  width={142.51} height={247}  className='center titleImage'/>
+        
         <Slider reviews={reviews}/>
         
         </div>

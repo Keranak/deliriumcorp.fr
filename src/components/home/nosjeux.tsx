@@ -5,7 +5,7 @@ import Link from "next/link";
 function NosJeux(){
     return( <section className="nosJeux">
     <div className="container">
-    <Image src="/NOS_JEUX.png" alt="nos jeux" width={142.51} height={247} className='center'/>
+    <Image src="/NOS_JEUX.png" alt="nos jeux" width={142.51} height={247} className='center titleImage'/>
     <div className="text">
       <p>La Délirium corp, organisera le kidnapping de vos équipes à la sortie de vos bureaux. </p>
       <p>Malveillant et prêt a tout pour que vous ne sortiez jamais de notre antre, Délirium exploitera chaque peur, phobie et angoisse afin que votre équipe vole en éclat . </p>
