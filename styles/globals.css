@@ -23,6 +23,7 @@ body{
   width: 100%;
   text-align: center;
 }
+
 .quiSommesNous{
   background-color: var(--backgroundWhite);
   color: var(--colorTextBlack);
@@ -33,7 +34,6 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   z-index: 1;
 }
 
@@ -41,15 +41,11 @@ body{
   background-color: var(--backgroundWhite);
   color: var(--colorTextBlack);
 }
+
 .nosJeux{
   background-color: var(--backgroundBlack);
   color: var(--colorTextWhite);
 }
-
-
-
-/***********NAVBAR*************/
-
 
 .navbar-container {
   display: flex;
@@ -129,7 +125,6 @@ body{
   color: var(--colorTextBlack);
 }
 
-/* Styles pour le footer */
 footer {
   background-color: var(--backgroundBlack);
   color: #fff;
@@ -141,6 +136,7 @@ footer > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -150,7 +146,7 @@ nav ul {
 
 nav li {
   margin-right: 1rem;
-  display: inline-block; /* Ajout de la propriété pour aligner les liens horizontalement */
+  display: inline-block;
 }
 
 nav a {
@@ -160,7 +156,6 @@ nav a {
   font-size: 1rem;
 }
 
-/* Styles pour les icônes du footer */
 footer > div:last-child ul {
   display: flex;
   align-items: center;
@@ -176,14 +171,17 @@ footer > div:last-child a {
   font-size: 1.2rem;
 }
 
-/*************Body**************/
+@media screen and (max-width: 768px) {
+  footer > div {
+    flex-direction: column;
+  }
+}
 
-
-/* Styles pour la section features */
 .container-adrenaline {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .aside {
@@ -216,4 +214,13 @@ footer > div:last-child a {
 iframe, Image, .titleImage{
   justify-content: center;
   align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .text-adrenaline, .adrenaline-image-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
