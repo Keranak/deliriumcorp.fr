@@ -29,7 +29,7 @@ body{
 }
 
 .bgBlack{
-  background-image: url(/fond_haut_de_page.svg);
+  background-color: var(--backgroundBlack);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,6 +44,9 @@ body{
 .nosJeux{
   background-color: var(--backgroundBlack);
   color: var(--colorTextWhite);
+}
+.vague{
+  background-image: url('/vague.svg');
 }
 
 
