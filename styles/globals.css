@@ -213,3 +213,9 @@ footer > div:last-child a {
   color: white; 
 }
 
+iframe{
+  justify-content: center;
+}
+Image{
+  justify-content: center;
+}
