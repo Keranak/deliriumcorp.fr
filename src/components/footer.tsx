@@ -36,7 +36,7 @@ const Footer = () => {
     </li>
     <li className="my-1 sm:my-0">
       <a href="/apropos" className="text-sm sm:text-base text-gray-300 hover:text-white">
-        À propos de nous
+        À propos
       </a>
     </li>
   </ul>
