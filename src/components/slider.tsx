@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 type Review = {
   id: number;
@@ -30,8 +31,8 @@ const Slider: React.FC<SliderProps> = ({ reviews }) => {
         <p>{currentReview.comment}</p>
       </div>
       <div className="slider-controls">
-        <button onClick={handlePrevious}>Previous</button>
-        <button onClick={handleNext}>Next</button>
+        <button onClick={handlePrevious}><Image src="/flechetemoin.png"alt="Previous"/></button>
+        <button onClick={handleNext}><Image src="/flechetemoind.png"alt="Next"/></button>
       </div>
     </div>
   );
