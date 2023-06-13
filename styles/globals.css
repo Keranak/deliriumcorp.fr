@@ -176,11 +176,6 @@ footer > div:last-child a {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 768px) {
-  footer > div {
-    flex-direction: column;
-  }
-}
 
 .container-adrenaline {
   display: flex;
@@ -223,19 +218,8 @@ iframe, Image, .titleImage{
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .text-adrenaline, .adrenaline-image-container {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  footer > div {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 768px) {
-  footer > div {
-    flex-direction: column;
-  }
+
+footer nav {
+  flex-direction: column;
+  display: flex;
 }
