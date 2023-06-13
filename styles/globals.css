@@ -195,3 +195,7 @@ footer > div:last-child a {
 .quiSommesNous{
   background-color: var(--backgroundWhite);
 }
+
+.vague{
+  background-image: "./vague.svg";
+}
