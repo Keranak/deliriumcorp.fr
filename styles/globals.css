@@ -182,3 +182,31 @@ section.hero > div:last-child img {
 }
 
 /* Styles pour la section features */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-container {
+  margin-right: 20px; /* Ajustez cette valeur selon vos besoins */
+  text-align: left;
+}
+
+.image-container {
+  text-align: right;
+  margin-left: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.h3 {
+  margin-bottom: 10px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.textWhite {
+  color: white; /* Couleur du texte, ajustez selon vos besoins */
+}
