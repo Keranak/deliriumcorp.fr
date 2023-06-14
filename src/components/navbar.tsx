@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav>
+    <nav> 
       <div className="navbar-container">
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link, index) => (
