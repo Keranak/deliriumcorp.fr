@@ -51,6 +51,7 @@ body {
 .nosJeux {
   background-color: var(--backgroundBlack);
   color: var(--colorTextWhite);
+  border-radius: 50px;
 }
 
 /* Barre de navigation */
@@ -241,7 +242,6 @@ footer nav {
 
 .vagueTop {
   position: relative;
-  top: 864px;
   width: 2000px;
   z-index: -1;
   rotate: 180deg;
