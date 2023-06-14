@@ -11,7 +11,7 @@
   src: url('/Outfit-Regular.ttf');
 }
 :root {
-  --background: #161616;
+  --background: #000000;
   --backgroundWhite: #f9f9f9;
   --backgroundBlack: #161616;
   --colorButton: #EB4040;
@@ -34,8 +34,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: black;
-  color: white;
+  background-color: var(--background);
+  color: var(--colorTextWhite);
 }
 
 h1 {
@@ -45,7 +45,7 @@ h1 {
 
 h1 a {
   text-decoration: none;
-  color: white;
+  color: var(--colorTextWhite);
 }
 
 /* CSS pour le menu burger */
@@ -74,7 +74,7 @@ h1 a {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: var(--colorTextWhite);
 }
 
 .burger {
