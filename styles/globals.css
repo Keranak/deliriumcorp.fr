@@ -51,6 +51,7 @@ body {
 .nosJeux {
   background-image: url(/vague.svg) ;
   color: var(--colorTextWhite);
+  background-repeat: no-repeat;
 }
 
 /* Barre de navigation */
