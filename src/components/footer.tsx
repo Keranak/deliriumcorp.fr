@@ -3,61 +3,52 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-gray-900 text-white py-8 waveTop">
       <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center">
         <Image
           className="max-w-full"
           src="/LOGO_DELIRIUM.png"
           alt="logo"
           width={142.51}
-          height={247}
-        />
-<nav className="ml-6 flex flex-col" >
-  <ul className="flex flex-col sm:flex-col">
-    <li className="my-1 sm:my-0 sm:mr-4">
-      <a href="/" className="text-sm sm:text-base text-gray-300 hover:text-white">
-        Accueil
-      </a>
-    </li>
-    <li className="my-1 sm:my-0 sm:mr-4">
-      <a href="/connexion" className="text-sm sm:text-base text-gray-300 hover:text-white">
-        Connexion
-      </a>
-    </li>
-    <li className="my-1 sm:my-0 sm:mr-4">
-      <a href="/inscription" className="text-sm sm:text-base text-gray-300 hover:text-white">
-        Inscription
-      </a>
-    </li>
-    <li className="my-1 sm:my-0 sm:mr-4">
-      <a href="/contact" className="text-sm sm:text-base text-gray-300 hover:text-white">
-        Contact
-      </a>
-    </li>
-    <li className="my-1 sm:my-0">
-      <a href="/apropos" className="text-sm sm:text-base text-gray-300 hover:text-white">
-        À propos
-      </a>
-    </li>
-  </ul>
-</nav>
+          height={247}/>
+          </div>
 
+          <ul id="links">
+            <li>
+              <a href="#top">Accueil</a>
+            </li>
+            <li>
+              <a href="/apropos">À propos</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+              </li>
+            <li>
+              <a href="/signin">Connexion</a>
+              </li>
+            <li>
+              <a href="/signup">Inscription</a>
+              </li>
+              <li>
+              <a href="/politics">Politique de confidentialité</a>
+              </li>
+              <li>
+              <a href="/mentions-legales">Mentions Légales</a>
+              </li>
+          </ul>
 
-
-        <br />
-        <div className="ml-6">
-          <ul className="flex">
-            <li className="mr-2">
+          <ul id="socials">
+            <li >
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                 <FaInstagram />
               </a>
             </li>
-            <li className="mr-2">
+            <li >
               <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                 <FaYoutube />
               </a>
             </li>
-            <li className="mr-2">
+            <li >
               <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                 <FaTiktok />
               </a>
@@ -68,9 +59,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-    </footer>
+        </footer>
   );
 };
 

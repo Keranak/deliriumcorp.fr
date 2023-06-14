@@ -23,7 +23,6 @@ const Navbar: React.FC = () => {
   return (
     <nav>
       <div className="navbar-container">
-        <img src="/LOGO_DELIRIUM.png" alt="logo de delirium" className="logo" />
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link, index) => (
             <li key={index}>
@@ -36,6 +35,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
     </nav>
+    
   );
 };
 
