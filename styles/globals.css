@@ -254,4 +254,5 @@ footer nav {
   padding: 28px 63px 28px 64px;
   box-shadow: x=0 y=0 blur=2 var(--colorButton)100%;
   text-shadow: x=0 y=0 blur=40 var(--colorButton)  100%;
+  border-radius: 50%;
 }
