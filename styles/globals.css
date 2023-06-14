@@ -92,6 +92,8 @@ h1 a {
     padding: 10px;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Ajout de la propriété pour activer la barre de défilement si nécessaire */
+    max-height: 70vh; /* Ajout de la propriété pour limiter la hauteur du menu burger */
   }
 
   .nav-links.active li {
@@ -106,3 +108,4 @@ h1 a {
     display: block;
   }
 }
+  
