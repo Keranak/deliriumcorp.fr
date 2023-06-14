@@ -19,3 +19,85 @@ p{
   font-family: 'Coloryson';
 }
 
+/* CSS pour le header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+/* CSS pour le menu burger */
+
+.navbar-container {
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active li {
+    margin: 10px 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
