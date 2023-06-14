@@ -32,8 +32,8 @@ body{
 
 .bgBlack{
   background-color: var(--backgroundBlack);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .slideComments{
@@ -221,7 +221,7 @@ footer nav {
 
 .vague{
   position: relative;
-  top: -1000px;
+  top: -864px;
   width: 2000px;
   z-index: -1;
   bottom: 1500px;
