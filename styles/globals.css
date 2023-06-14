@@ -239,6 +239,16 @@ footer nav {
   margin-top: -1000px;
 }
 
+.vague {
+  position: relative;
+  top: -864px;
+  width: 2000px;
+  z-index: -1;
+  bottom: 1500px;
+  rotate: 180deg;
+}
+
+/* Bouton */
 .button{
   color: #F9F9F9;
   background-color:var(--colorButton);

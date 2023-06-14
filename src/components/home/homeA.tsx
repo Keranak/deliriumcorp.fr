@@ -9,7 +9,9 @@ export default function HomeA() {
         <Adrenaline />
         <figure><img src="/fond_haut_de_page.svg" alt="vague" className='vague'/></figure>
         <QuiSommesNous />
+        <figure><img src="/fond_haut_de_page.svg" alt="vague" className='vagueTop'/></figure>
         <NosJeux />
+        <figure><img src="/fond_haut_de_page.svg" alt="vague" className='vague'/></figure>
         <Comments />
         </main>
     )
