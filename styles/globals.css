@@ -239,12 +239,11 @@ footer nav {
   margin-top: -1000px;
 }
 
-.vague {
+.vagueTop {
   position: relative;
-  top: -864px;
+  top: 864px;
   width: 2000px;
   z-index: -1;
-  bottom: 1500px;
   rotate: 180deg;
 }
 
