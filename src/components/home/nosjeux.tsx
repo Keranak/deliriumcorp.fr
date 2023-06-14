@@ -44,7 +44,7 @@ function NosJeux(){
       </div>
 
 
-      <button>
+      <button className="button">
         <Link href="/nos-jeux"> Tout découvrir </Link>
       </button>
     </div>
