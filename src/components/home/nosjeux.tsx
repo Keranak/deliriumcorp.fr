@@ -3,7 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 function NosJeux(){
-    return( <section className="nosJeux">
+    return( 
+      
+    <section className="nosJeux">
+              <figure><img src="/fond_haut_de_page.svg" alt="vague" className='vagueTop'/></figure>
+
     <div className="container">
     <Image src="/NOS_JEUX.png" alt="nos jeux" width={142.51} height={247} className='center titleImage'/>
     <div className="text">
@@ -13,36 +17,41 @@ function NosJeux(){
       </div>
 
 
-      <div className="cards">
-        <div className="card">
-          <h5 className="CardTitle">La toile Infinie</h5>
-          <p className="CardText">
-          Arachnophobe s’abstenir ! Lorsque vous pensez enfin être tiré de l’affaire le piège de la veuve se referme sur vous ! Survival game axé sur l’angoisse et les énigmes à timer.
-          </p>
-          <Image src="/TETE_1-LaToileInfinie.png" alt="toile infinie" width={142.51} height={247} className='center'/>
-        </div>
-      </div>
+      <div className="cards bg-white border-black">
+  <div className="card">
+    <h5 className="CardTitle text-black">La toile Infinie</h5>
+    <p className="CardText text-black">
+      Arachnophobe s’abstenir ! Lorsque vous pensez enfin être tiré de l’affaire le piège de la veuve se referme sur vous ! Survival game axé sur l’angoisse et les énigmes à timer.
+    </p>
+    <div className="flex justify-center">
+      <Image src="/TETE_1-LaToileInfinie.png" alt="toile infinie" width={142.51} height={247} className="center mb-[-10px]" />
+    </div>
+  </div>
+</div>
 
-      <div className="cards">
-        <div className="card">
-          <h5 className="CardTitle">Le labyrinthe de l'âme</h5>
-          <p className="CardText">
-          Errez dans les méandres de l’âme torturée du grand savant de Delirium Corp. Entre souvenirs et visions du futur vous devrez discerner le vrai du faux. Survival game axé sur le paranormal et l’introspection du savant de notre équipe . 
-          </p>
-          <Image src="/TETE_2-Le_labyrinthe-de-l-ame.png" alt="labyrinthe de l'âme" width={142.51} height={247} className='center'/>
-        </div>
-      </div>
+<div className="cards bg-white border-black">
+  <div className="card">
+    <h5 className="CardTitle text-black">Le labyrinthe de l'âme</h5>
+    <p className="CardText text-black">
+      Errez dans les méandres de l’âme torturée du grand savant de Delirium Corp. Entre souvenirs et visions du futur vous devrez discerner le vrai du faux. Survival game axé sur le paranormal et l’introspection du savant de notre équipe.
+    </p>
+    <div className="flex justify-center">
+      <Image src="/TETE_2-Le_labyrinthe-de-l-ame.png" alt="labyrinthe de l'âme" width={142.51} height={247} className="center mb-[-10px]" />
+    </div>
+  </div>
+</div>
 
-      <div className="cards">
-        <div className="card">
-          <h5 className="CardTitle">L'écho des failles</h5>
-          <p className="CardText">
-          Voyagez entre nos différents jeux et tenter de trouver des indices pour résoudre notre plus grande énigme. Attention cependant, nous protégeons tout particulièrement  les failles. Survival axé sur la course poursuite, niveau confirmé.
-          </p>
-          <Image src="/TETE_3-L_echo_des_Failles.png" alt="labyrinthe de l'âme" width={142.51} height={247} className='center'/>
-        </div>
-      </div>
-
+<div className="cards bg-white border-black">
+  <div className="card">
+    <h5 className="CardTitle text-black">L'écho des failles</h5>
+    <p className="CardText text-black">
+      Voyagez entre nos différents jeux et tenter de trouver des indices pour résoudre notre plus grande énigme. Attention cependant, nous protégeons tout particulièrement les failles. Survival axé sur la course poursuite, niveau confirmé.
+    </p>
+    <div className="flex justify-center">
+      <Image src="/TETE_3-L_echo_des_Failles.png" alt="labyrinthe de l'âme" width={142.51} height={247} className="center mb-[-10px]" />
+    </div>
+  </div>
+</div>
 
       <button className="button">
         <Link href="/nos-jeux"> Tout découvrir </Link>
