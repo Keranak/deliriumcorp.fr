@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 useEffect(() => {
   const tagManagerArgs:any = {
-    gtmId: env.GTM_MANAGER_ID,
+    gtmId: 'GTM-5K7K6ND',
 }
 
   TagManager.initialize(tagManagerArgs)

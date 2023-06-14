@@ -6,9 +6,9 @@
 /* Police de caractère personnalisée */
 @font-face {
   font-family: 'Coloryson';
-  src: url(/fonts/Coloryson.ttf);
+  src: url(/styles/fonts/Coloryson.ttf);
   font-family: 'Outfit';
-  src: url(/fonts/Outfit-Regular.ttf);
+  src: url(/styles/fonts/Outfit-Regular.ttf);
 }
 :root {
   --background: #000000;
@@ -41,6 +41,7 @@ header {
 h1 {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 h1 a {
@@ -127,15 +128,28 @@ h1 a {
   
 
   .waveBottom::after{
-    padding-top: 50px;
     background-image: url(/Languette_MOBILE.svg);
   }
+   #Adrenaline .AdrenalineTitle, .AdrenalineTexte {
+    width: 50%;
+   }
+   #Adrenaline .AdrenalineTitle::after{
+    background-image: url(/MASCOTTE_HEADER.png);
+   }
+
+
 
 }
 #Adrenaline{
   background-color: var(--background);
   color: var(--colorTextWhite);
 }
-#Adrenaline h1{
+#Adrenaline .AdrenalineTitle{
   font-family: 'Coloryson';
 }
+
+ #Adrenaline .AdrenalineTitle::after{
+  background-image: url(/MASCOTTE_HEADER.png);
+  height: 400px;
+  width: 400px;
+ }
