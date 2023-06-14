@@ -34,12 +34,6 @@ body{
   background-color: var(--backgroundBlack);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  position: relative;
-  top: -1000px;
-  width: 2000px;
-  z-index: -1;
-  bottom: 1500px;
-  margin-top: -1000px;
 }
 
 .slideComments{
@@ -226,9 +220,10 @@ footer nav {
 }
 
 .vague{
-  width: 100%;
-  margin: 0;
-  padding: 0;
   position: relative;
+  top: -1000px;
+  width: 2000px;
   z-index: -1;
+  bottom: 1500px;
+  margin-top: -1000px;
 }
