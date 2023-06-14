@@ -11,7 +11,7 @@ function Comments(){
     return(
         <section className="slideComments whiteSection" >
         <div className="container">
-        <Image src="/LES_SURVIVANTS.png" alt="avis"  width={142.51} height={247}  className='center titleImage'/>
+        <h1 className="sectionTitle">Les survivants</h1>
         
         <Slider reviews={reviews}/>
         

@@ -37,28 +37,29 @@ const Footer = () => {
               </li>
           </ul>
 
-          <ul id="socials">
-            <li >
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-                <FaInstagram />
-              </a>
-            </li>
-            <li >
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-                <FaYoutube />
-              </a>
-            </li>
-            <li >
-              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-                <FaTiktok />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-                <FaLinkedin />
-              </a>
-            </li>
-          </ul>
+          <ul id="socials" className="horizontal-icons">
+  <li>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+      <FaInstagram />
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+      <FaYoutube />
+    </a>
+  </li>
+  <li>
+    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+      <FaTiktok />
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+      <FaLinkedin />
+    </a>
+  </li>
+</ul>
+
         </footer>
   );
 };

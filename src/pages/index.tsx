@@ -6,7 +6,6 @@ import Comments from '@/src/components/home/comments';
 import NosJeux from '@/src/components/home/nosjeux';
 import QuiSommesNous from '@/src/components/home/quisommesnous';
 import Header from '@/src/components/header';
-import Footer from '@/src/components/footer';
 
 declare global {
   interface Window {
@@ -23,18 +22,23 @@ export default function Home() {
     
 
     <main>
-      <section className='waveBottom'>
+      <section className="waveBottom after:content-MobileLanguetteBottom">
       <Header/>
       <Adrenaline/>
+      <div className="test"></div>
       </section>
       <QuiSommesNous/>
       <section className='wave-top wave-bottom'>
+      <div className="test-top"></div>
       <NosJeux/>
+      <div className="test"></div>
       </section>
       <section id='slider'>
       <Comments/>
       </section>
-      <Footer/>
+      <div className="test-top"></div>
+
+
       
     </main>
   )

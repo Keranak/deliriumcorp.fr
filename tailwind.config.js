@@ -1,3 +1,5 @@
+const { url } = require('inspector');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -17,6 +19,9 @@ module.exports = {
       center: true,
       padding: "2rem",
     },
+    content:{
+      'MobileLanguetteBottom': 'url(/Languette_MOBILE.svg)',
+    }
   },
   plugins: [],
 }
