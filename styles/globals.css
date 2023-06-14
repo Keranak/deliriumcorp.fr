@@ -10,6 +10,15 @@
   font-family: 'Outfit';
   src: url('/Outfit-Regular.ttf');
 }
+:root {
+  --background: #161616;
+  --backgroundWhite: #f9f9f9;
+  --backgroundBlack: #161616;
+  --colorButton: #EB4040;
+  --colorTextButton: #f9f9f9;
+  --colorTextWhite: #f9f9f9;
+  --colorTextBlack: #161616;
+}
 
 p{
   font-family: 'Outfit';
@@ -89,7 +98,7 @@ h1 a {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: black;
+    background-color: var(--background);
     padding: 10px;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -103,10 +112,19 @@ h1 a {
   }
 
   .nav-links.active a {
-    color: white;
+    color: var(--colorTextWhite);
   }
 
   .burger {
     display: block;
   }
+
+  .waveBottom::after{
+    background-image: url(/Languette_MOBILE.svg);
+  }
+
+}
+#Adrenaline{
+  background-color: var(--background);
+  color: var(--colorTextWhite);
 }
