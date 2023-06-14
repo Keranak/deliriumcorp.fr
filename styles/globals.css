@@ -7,6 +7,12 @@
 @font-face {
   font-family: 'Coloryson';
   src: url('/coloryson.ttf');
+  font-family: 'Outfit';
+  src: url('/Outfit-Regular.ttf');
+}
+
+p{
+  font-family: 'Outfit';
 }
 
 .mainTitle {
