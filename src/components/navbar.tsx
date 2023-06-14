@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
         <div className={`burger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <img src="/MENU_BURGER.png" alt="menu burger" />
+          <img src="/MENU_BURGER.png" alt="menu burger" className='logoBurger' />
         </div>
       </div>
     </nav>
