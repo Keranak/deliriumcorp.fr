@@ -7,6 +7,7 @@ export default function HomeA() {
     return (
         <main>
         <Adrenaline />
+        <figure><img src="/vague.svg" alt="vague" className='vague'/></figure>
         <QuiSommesNous />
         <NosJeux />
         <Comments />
