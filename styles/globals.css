@@ -49,7 +49,7 @@ body {
 
 /* Section "Nos jeux" */
 .nosJeux {
-  background-color: var(--backgroundBlack);
+  background-image: url(/vague.svg) ;
   color: var(--colorTextWhite);
 }
 
@@ -201,10 +201,10 @@ footer nav {
 
 .button{
   color: #F9F9F9;
-  background-color: #EB4040;
+  background-color:var(--colorButton);
   padding: 28px 63px 28px 64px;
-  box-shadow: x=0 y=0 blur=2 #EB4040 100%;
-  text-shadow: x=0 y=0 blur=40 #EB4040  100%;
+  box-shadow: x=0 y=0 blur=2 var(--colorButton)100%;
+  text-shadow: x=0 y=0 blur=40 var(--colorButton)  100%;
 }
 
 
