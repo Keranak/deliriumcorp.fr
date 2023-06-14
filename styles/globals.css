@@ -52,7 +52,8 @@ body {
   background-image: url(/vague.svg) ;
   color: var(--colorTextWhite);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 /* Barre de navigation */
