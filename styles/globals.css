@@ -49,11 +49,8 @@ body {
 
 /* Section "Nos jeux" */
 .nosJeux {
-  background-image: url(/vague.svg) ;
+  background-color: var(--backgroundBlack);
   color: var(--colorTextWhite);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 /* Barre de navigation */
@@ -186,29 +183,13 @@ Image,
   height: auto;
 }
 
-/* Section "Vague" */
+/* footer */
 footer nav {
   flex-direction: column;
   display: flex;
   font-size: 10px;
 }
 
-.vague {
-  position: relative;
-  top: -864px;
-  width: 2000px;
-  z-index: -1;
-  bottom: 1500px;
-  margin-top: -1000px;
-}
-
-.button{
-  color: #F9F9F9;
-  background-color:var(--colorButton);
-  padding: 28px 63px 28px 64px;
-  box-shadow: x=0 y=0 blur=2 var(--colorButton)100%;
-  text-shadow: x=0 y=0 blur=40 var(--colorButton)  100%;
-}
 
 
 
@@ -248,4 +229,20 @@ footer nav {
     display: none;
   }
 
+}
+.vague {
+  position: relative;
+  top: -864px;
+  width: 2000px;
+  z-index: -1;
+  bottom: 1500px;
+  margin-top: -1000px;
+}
+
+.button{
+  color: #F9F9F9;
+  background-color:var(--colorButton);
+  padding: 28px 63px 28px 64px;
+  box-shadow: x=0 y=0 blur=2 var(--colorButton)100%;
+  text-shadow: x=0 y=0 blur=40 var(--colorButton)  100%;
 }
