@@ -8,7 +8,7 @@ import { env } from 'process'
 export default function App({ Component, pageProps }: AppProps) {
 
 useEffect(() => {
-  const tagManagerArgs:any = {
+  const tagManagerArgs = {
     gtmId: 'GTM-KNN6MTD',
 }
 
