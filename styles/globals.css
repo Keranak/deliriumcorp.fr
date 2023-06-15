@@ -4,11 +4,14 @@
 @tailwind utilities;
 
 /* Police de caractère personnalisée */
+
 @font-face {
-  font-family: 'Coloryson';
-  src: url(/fonts/Coloryson.woff);
-  font-family: 'Outfit';
-  src: url(/fonts/Outfit-Regular.woff);
+  font-family: 'colorysonregular';
+  src: url('/fonts/coloryson-webfont.woff2') format('woff2'),
+       url('/fonts/coloryson-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 :root {
   --background: #161616;
