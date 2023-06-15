@@ -35,7 +35,9 @@ article{
   padding-bottom: 10rem;
   justify-content: center;
 }
-.toile::after{
+.toile::after,
+.maze::after,
+.echo::after{
   content: "";
   background-image: url(/TETE_1-LaToileInfinie.png);
   height: 150px;
@@ -44,33 +46,23 @@ article{
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
+  bottom: -75px;
+  left: calc(50% - 75px);
+}
+.toile::after{
+  background-image: url(/TETE_1-LaToileInfinie.png);
 }
 .maze::after{
-  content: "";
   background-image: url(/TETE_2-Le_labyrinthe-de-l-ame.png);
-  height: 150px;
-  width: 150px;
-  right: 2px;
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
 }
 .echo::after{
-  content: "";
   background-image: url(/TETE_3-L_echo_des_Failles.png);
-  height: 150px;
-  width: 150px;
-
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative; 
 }
 
 .cards{
   position: relative;
+  margin-bottom: 75px;
 }
 
 p{
@@ -199,11 +191,6 @@ h1 a {
   top: auto;
   bottom: -2px;
 }
-
-
-
-
-
 #Adrenaline{
   background-color: var(--background);
   color: var(--colorTextWhite);
@@ -240,6 +227,7 @@ h1 a {
   color: var(--colorTextBlack);
   border-radius: 50px;
   margin-bottom: 50px;
+  position: relative;
 }
 
 .button{
