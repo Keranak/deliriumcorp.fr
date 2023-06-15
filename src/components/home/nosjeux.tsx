@@ -30,8 +30,8 @@ function NosJeux(){
 </div>
       
 
-      <p className="button">
-        <Link href="/nos-jeux"> Tout découvrir </Link>
+      <p className="buttonp">
+        <Link href="/nos-jeux" className="button"> Tout découvrir </Link>
       </p>
     
     </section>

@@ -1,6 +1,11 @@
-/** @type {import('next').NextConfig} */
+const nextCors = require('next-cors');
+
 const nextConfig = {
   reactStrictMode: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextCors(nextConfig, {
+  origin: '*',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+});
