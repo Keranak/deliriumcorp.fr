@@ -3,7 +3,10 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 waveTop">
+    <footer className="text-white py-8 waveTop">
+      <section>
+
+      
       <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center logoFooter">
         <Image
           className="max-w-full"
@@ -59,7 +62,7 @@ const Footer = () => {
     </a>
   </li>
 </ul>
-    <div className='mascotteFooter'/>
+</section>
 
         </footer>
   );

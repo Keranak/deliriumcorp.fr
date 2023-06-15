@@ -22,23 +22,17 @@ export default function Home() {
     
 
     <main>
-      <section className="waveBottom after:content-MobileLanguetteBottom">
+      <section className="waveBottom" id="top">
       <Header/>
       <Adrenaline/>
-      <div className="test"></div>
       </section>
       <QuiSommesNous/>
-      <section className='wave-top wave-bottom'>
-      <div className="test-top"></div>
+      <section className='waveTop waveBottom'>
       <NosJeux/>
-      <div className="test"></div>
       </section>
       <section id='slider'>
       <Comments/>
       </section>
-      <div className="test-top"></div>
-
-
       
     </main>
   )
