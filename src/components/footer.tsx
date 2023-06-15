@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 waveTop">
-      <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center logoFooter">
         <Image
           className="max-w-full"
           src="/LOGO_DELIRIUM.png"
@@ -59,6 +59,7 @@ const Footer = () => {
     </a>
   </li>
 </ul>
+    <div className='mascotteFooter'/>
 
         </footer>
   );
