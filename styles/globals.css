@@ -6,9 +6,9 @@
 /* Police de caractère personnalisée */
 @font-face {
   font-family: 'Coloryson';
-  src: url(/fonts/Coloryson.ttf);
+  src: url(/fonts/Coloryson.woff);
   font-family: 'Outfit';
-  src: url(/fonts/Outfit-Regular.ttf);
+  src: url(/fonts/Outfit-Regular.woff);
 }
 :root {
   --background: #161616;
