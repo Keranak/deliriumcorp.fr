@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'colorysonregular';
-  src: url('/fonts/coloryson-webfont.woff2') format('woff2'),
+  src: url('/fontscoloryson-webfont.woff2') format('woff2'),
        url('/fonts/coloryson-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -33,7 +33,8 @@ p{
 }
 
 .mainTitle {
-  font-family: 'Coloryson' !important;
+  font-family: 'colorysonregular' !important;
+  padding: 3rem;
 }
 /* CSS pour le header */
 
@@ -207,7 +208,7 @@ h1 a {
   color: var(--colorTextWhite);
 }
 #Adrenaline .AdrenalineTitle{
-  font-family: 'Coloryson';
+  font-family: 'colorysonregular';
 }
 
 
@@ -217,8 +218,8 @@ h1 a {
 
 
 .sectionTitle{
-  font-family: 'Coloryson';
-  font-size: 1.5rem;
+  font-family: 'colorysonregular';
+  font-size: 3rem;
   color: var(--colorButton);
 }
 
@@ -270,7 +271,7 @@ footer section{
   margin-right: 0;
 }
 .titleCard{
-  font-family: 'Coloryson';
+  font-family: 'colorysonregular';
   font-size: 1.5rem;
   
 }
