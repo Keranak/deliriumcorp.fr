@@ -6,6 +6,7 @@ import Comments from '@/src/components/home/comments';
 import NosJeux from '@/src/components/home/nosjeux';
 import QuiSommesNous from '@/src/components/home/quisommesnous';
 import Header from '@/src/components/header';
+import Head from 'next/head';
 
 declare global {
   interface Window {
@@ -20,7 +21,6 @@ export default function Home() {
   
   return(
     
-
     <main>
       <section className="waveBottom" id="top">
       <Header/>
