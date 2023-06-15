@@ -147,6 +147,29 @@ h1 a {
 
 
 
+.buttonLeft{
+  display: flex;
+  position: relative;
+  bottom: 78px;
+  right: 20px;
+}
+
+.buttonRight{
+  display: flex;
+  position: relative;
+  left : 320px;
+  bottom: 130px;
+}
+.slider-content{
+  background-color: var(--background);
+  color: var(--colorTextWhite);
+  border-radius: 30px;
+  padding: 2rem;
+  width: 300px;
+  position: relative;
+  left: 25px;
+}
+
 
 
 }

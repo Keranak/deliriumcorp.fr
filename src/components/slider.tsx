@@ -31,8 +31,8 @@ const Slider: React.FC<SliderProps> = ({ reviews }) => {
         <h2>{currentReview.name}</h2>
       </div>
       <div className="slider-controls">
-        <button onClick={handlePrevious}><Image src="/flechetemoin.png"alt="Previous" height={50} width={50}/></button>
-        <button onClick={handleNext}><Image src="/flechetemoind.png"alt="Next" width={50} height={50}/></button>
+        <button className="buttonLeft" onClick={handlePrevious}><Image src="/flechetemoin.png"alt="Previous" height={50} width={50}/></button>
+        <button className="buttonRight" onClick={handleNext}><Image src="/flechetemoind.png"alt="Next" width={50} height={50}/></button>
       </div>
     </div>
   );
