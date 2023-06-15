@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <footer className="text-white py-8 waveTop">
-      <section>
+      <section id='bottom'>
 
       
       <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center logoFooter">

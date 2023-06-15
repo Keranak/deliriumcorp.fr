@@ -75,7 +75,7 @@ h1 a {
 
 .nav-links li {
   margin-left: 20px;
-  white-space: nowrap; /* Ajout de la propriété pour empêcher le texte de se retourner à la ligne */
+  white-space: nowrap; 
 }
 
 .nav-links li:first-child {
@@ -93,7 +93,7 @@ h1 a {
 }
 
 .burger img {
-  width: 98px; /* Ajustement de la taille du logo du menu burger */
+  width: 98px; 
   height: 98px;
 }
 
@@ -117,7 +117,7 @@ h1 a {
 
   .nav-links.active li {
     margin: 10px 0;
-    width: 100%; /* Ajustement de la largeur des éléments de la liste */
+    width: 100%; 
   }
 
   .nav-links.active a {
@@ -141,27 +141,14 @@ h1 a {
 
 
 
-.buttonLeft{
-  display: flex;
-  position: relative;
-  bottom: 78px;
-  right: 20px;
-}
 
-.buttonRight{
-  display: flex;
-  position: relative;
-  left : 320px;
-  bottom: 130px;
-}
 .slider-content{
   background-color: var(--background);
   color: var(--colorTextWhite);
   border-radius: 30px;
   padding: 2rem;
   width: 300px;
-  position: relative;
-  left: 25px;
+
 }
 
 .mascotteFooter{
@@ -262,6 +249,10 @@ footer section{
 }
 
 /*Footer socials */
+#socials{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 #socials.horizontal-icons li {
   display: inline-block;
   margin-right: 10px;
@@ -316,4 +307,37 @@ footer section{
     background-size: contain;
   }
   
+}
+#top::before {
+  content: "";
+  display: block;
+  height: 39%;
+  aspect-ratio: 577/991;
+  background-image: url(/MASCOTTE_HEADER.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 10;
+  position: absolute;
+  right: 10%;
+  bottom: 11.2vw;
+  background-size: contain;
+}
+
+#bottom::after{
+  content: "";
+  display: block;
+  height: 39%;
+  aspect-ratio: 577/991;
+  background-image: url(/MASCOTTE_FOOTER.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: 10;
+  position: absolute;
+  left: 5px;
+  bottom: 0px;
+  background-size: contain;
+}
+
+#links{
+  padding-bottom: 50px;
 }
