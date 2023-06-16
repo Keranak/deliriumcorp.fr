@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link, index) => (
             <li key={index}>
-              <a href={link.url}>{link.title}</a>
+              <a title={link.title} href={link.url}>{link.title}</a>
             </li>
           ))}
         </ul>

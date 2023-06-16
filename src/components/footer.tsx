@@ -3,19 +3,19 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="text-white py-8 waveTop">
+    <footer className="waveTop">
       <section id='bottom'>
 
       
-      <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center logoFooter">
+      <div className="container logoFooter">
         <Image
           className="max-w-full"
           src="/LOGO_DELIRIUM.png"
           alt="logo"
-          width={142.51}
+          width={142}
           height={247}/>
           </div>
-
+          <section>
           <ul id="links">
             <li>
               <a href="#top">Accueil</a>
@@ -26,12 +26,6 @@ const Footer = () => {
             <li>
               <a href="/contact">Contact</a>
               </li>
-            <li>
-              <a href="/signin">Connexion</a>
-              </li>
-            <li>
-              <a href="/signup">Inscription</a>
-              </li>
               <li>
               <a href="/politics">Politique de confidentialité</a>
               </li>
@@ -39,6 +33,15 @@ const Footer = () => {
               <a href="/mentions-legales">Mentions Légales</a>
               </li>
           </ul>
+          </section>
+          <section>
+          <li>
+              <a href="/signin">Connexion</a>
+              </li>
+            <li>
+              <a href="/signup">Inscription</a>
+              </li>
+          
 
           <ul id="socials" className="horizontal-icons">
   <li>
@@ -62,6 +65,7 @@ const Footer = () => {
     </a>
   </li>
 </ul>
+</section>
 </section>
 
         </footer>
