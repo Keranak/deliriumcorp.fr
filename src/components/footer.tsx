@@ -18,19 +18,19 @@ const Footer = () => {
           <section>
           <ul id="links">
             <li>
-              <a href="#top">Accueil</a>
+              <a href="#top" title='Accueil'>Accueil</a>
             </li>
             <li>
-              <a href="/apropos">À propos</a>
+              <a href="/apropos" title='À propos'>À propos</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="/contact" title='Contact'>Contact</a>
               </li>
               <li>
-              <a href="/politics">Politique de confidentialité</a>
+              <a href="/politics" title='Politique de confidentialité'>Politique de confidentialité</a>
               </li>
               <li>
-              <a href="/mentions-legales">Mentions Légales</a>
+              <a href="/mentions-legales" title='Mentions Légales'>Mentions Légales</a>
               </li>
           </ul>
           </section>

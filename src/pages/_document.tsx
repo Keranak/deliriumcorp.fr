@@ -11,7 +11,6 @@ export default function Document() {
   return (
     <Html lang="fr">
       <Head>
-        <title>Delirium Corp</title>
       </Head>
       <body>
         <Main />
