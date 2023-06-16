@@ -1,4 +1,4 @@
-import { FaInstagram, FaYoutube, FaTiktok, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaTiktok, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import Image from 'next/image';
 
 const Footer = () => {
@@ -42,7 +42,7 @@ const Footer = () => {
 
           <ul id="socials" className="horizontal-icons">
   <li>
-    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+    <a href="https://www.instagram.com/delirium.corp/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
       <FaInstagram />
     </a>
   </li>
@@ -52,12 +52,12 @@ const Footer = () => {
     </a>
   </li>
   <li>
-    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-      <FaTiktok />
+    <a href="https://www.facebook.com/profile.php?id=100093210124644" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+      <FaFacebook />
     </a>
   </li>
   <li>
-    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+    <a href="https://www.linkedin.com/company/d%C3%A9lirium-corp/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
       <FaLinkedin />
     </a>
   </li>
