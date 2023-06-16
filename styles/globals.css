@@ -450,9 +450,16 @@ left: -30px;
   footer{
     position: absolute;
     text-transform: uppercase;
+    list-style: none;
+    font-size: 5rem;
   }
   footer img{
     width: 35%  ;
+    
+  }
+
+  footer li{
+    padding-bottom: 20px;
   }
   
   
