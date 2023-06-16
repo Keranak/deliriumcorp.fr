@@ -21,8 +21,8 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav> 
-      <div className="navbar-container">
+    <nav aria-label="Menu de navigation"> 
+      <div className="navbar-container text-xl">
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link, index) => (
             <li key={index}>
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
         <div className={`burger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <img src="/MENU_BURGER.png" alt="menu burger" className='logoBurger' />
+          <img src="/MENU_BURGER.png" alt="menu burger" className='logoBurger' aria-label="Ouvrir le menu" />
         </div>
       </div>
     </nav>

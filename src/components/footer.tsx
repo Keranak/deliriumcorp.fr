@@ -15,7 +15,7 @@ const Footer = () => {
           width={142}
           height={247}/>
           </div>
-          <section>
+          <section className='leftDesktop'>
           <ul id="links">
             <li>
               <a href="#top" title='Accueil'>Accueil</a>
@@ -34,7 +34,7 @@ const Footer = () => {
               </li>
           </ul>
           </section>
-          <section>
+          <section  className='rightDesktop'>
           <li>
               <a href="/signin">Connexion</a>
               </li>

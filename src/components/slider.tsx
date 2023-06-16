@@ -1,41 +1,23 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
+import { PropsWithChildren } from "react";
 
-type Review = {
-  id: number;
-  name: string;
-  comment: string;
-};
+// 1. define the props
+type Props = { options?: EmblaOptionsType } & PropsWithChildren;
 
-type SliderProps = {
-  reviews: Review[];
-};
-
-const Slider: React.FC<SliderProps> = ({ reviews }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? reviews.length - 1 : prevIndex - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === reviews.length - 1 ? 0 : prevIndex + 1));
-  };
-
-  const currentReview = reviews[currentIndex];
+const Slider = ({ children, options }: Props) => {
+  // 2. initialize EmblaCarousel using the custom hook
+  const [emblaRef] = useEmblaCarousel({
+    slidesToScroll: 1,
+    align: "start",
+    ...options,
+  });
 
   return (
-    <div className="slider">
-      <div className="slider-content">
-        <p>{currentReview.comment}</p>
-        <h2>{currentReview.name}</h2>
-      </div>
-      <div className="slider-controls">
-        <button className="buttonLeft" onClick={handlePrevious}><Image src="/flechetemoin.png"alt="Previous" height={50} width={50}/></button>
-        <button className="buttonRight" onClick={handleNext}><Image src="/flechetemoind.png"alt="Next" width={50} height={50}/></button>
-      </div>
+    // 3. set ref as emblaRef.
+    // make sure we have overflow-hidden and flex so that it displays properly
+    <div className="overflow-hidden" ref={emblaRef}>
+      <div className="flex gap-10">{children}</div>
     </div>
   );
 };
-
 export default Slider;

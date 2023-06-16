@@ -9,7 +9,7 @@ function NosJeux(){
         
 <div className="container principeJeux">
   <h1 className="sectionTitle">Nos Jeux</h1>
-  <p>La Délirium corp, organisera le kidnapping de vos équipes à la sortie de vos bureaux. </p>
+  <p className="">La Délirium corp, organisera le kidnapping de vos équipes à la sortie de vos bureaux. </p>
   <p>Malveillant et prêt a tout pour que vous ne sortiez jamais de notre antre, Délirium exploitera chaque peur, phobie et angoisse afin que votre équipe vole en éclat . </p>
   <p>L’adrénaline comme maître mot !</p>
 </div>

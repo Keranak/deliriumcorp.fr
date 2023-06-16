@@ -22,6 +22,16 @@
   --colorTextBlack: #161616;
 }
 
+html {
+  font-size: 62.5%; /* Ré-équilibrage du Rem face au Pixel pour des calculs simples */
+}
+/* Exemple d'application */
+p {
+  font-size: 12px; /* Pour les navigateurs qui ne supportent pas le Rem */
+  font-size: 1.2rem; /* Pour les navigateurs « Responsive » */
+}
+
+
 article{
   padding: 2rem;
   padding-bottom: 10rem;
@@ -59,7 +69,7 @@ article{
 
 p{
   font-family: 'Outfit', sans-serif;
-  font-size: 18px;
+  font-size: 2rem;
 }
 
 .mainTitle {
@@ -151,7 +161,7 @@ h1 a {
 
 }
 
-.mascotteFooter{
+.mascotte{
   background-image: url(/MASCOTTE_FOOTER.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -191,6 +201,8 @@ h1 a {
 }
 #Adrenaline .AdrenalineTitle{
   font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 
@@ -434,5 +446,24 @@ left: -30px;
 .slider-content{
   position: relative;
   left: 40%;}
+
+  footer{
+    position: absolute;
+    text-transform: uppercase;
+  }
+  footer img{
+    width: 35%  ;
+  }
   
+  
+}
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
