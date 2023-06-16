@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Police de caractère personnalisée */
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 @font-face {
   font-family: 'colorysonregular';
   src: url('/fonts/coloryson-webfont.woff2') format('woff2'),
@@ -11,14 +11,7 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face{
-  font-family: 'Outfit';
-  src:
-      url('/fonts/Outfit-Regular.woff2') format('woff2'),
-      url('/fonts/Outfit-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+
 :root {
   --background: #161616;
   --backgroundWhite: #f9f9f9;
@@ -38,7 +31,6 @@ article{
 .maze::after,
 .echo::after{
   content: "";
-  background-image: url(/TETE_1-LaToileInfinie.png);
   height: 150px;
   width: 150px;
   right: 2px;
@@ -48,6 +40,9 @@ article{
   position: absolute;
   bottom: -50px;
   left: calc(50% - 75px);
+}
+.toile::after{
+  background-image: url(/TETE_1-LaToileInfinie.png);
 }
 
 .maze::after{
@@ -63,7 +58,7 @@ article{
 }
 
 p{
-  font-family: 'Outfit';
+  font-family: 'Outfit', sans-serif;
   font-size: 18px;
 }
 
@@ -195,7 +190,7 @@ h1 a {
   color: var(--colorTextWhite);
 }
 #Adrenaline .AdrenalineTitle{
-  font-family: 'Outfit';
+  font-family: 'Outfit', sans-serif;
 }
 
 
@@ -242,7 +237,7 @@ h1 a {
 .buttonp{
   text-align: center;
   z-index: 0;
-  padding: 2%;
+  padding: 4%;
 }
 
 footer section{
@@ -425,7 +420,6 @@ left: -30px;
 .maze::after,
 .echo::after{
   content: "";
-  background-image: url(/TETE_1-LaToileInfinie.png);
   height: 150px;
   width: 150px;
   right: 2px;
