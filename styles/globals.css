@@ -461,6 +461,13 @@ left: -30px;
   footer li{
     padding-bottom: 20px;
   }
+  #socials{
+    font-size: 50px;
+  }
+  .rightDesktop{
+    font-size: 2rem;
+  }
+  
   
   
 }
@@ -473,4 +480,7 @@ left: -30px;
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+}
+.rightDesktop{
+  list-style: none;
 }
