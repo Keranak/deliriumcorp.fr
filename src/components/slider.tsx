@@ -7,7 +7,10 @@ const Slider: React.FC = () => {
   const slides = [
     { id: 1, name: 'Avis 1', content: 'Contenu de l\'avis 1' },
     { id: 2, name: 'Avis 2', content: 'Contenu de l\'avis 2' },
-    { id: 3, name: 'Avis 3', content: 'Contenu de l\'avis 3' }
+    { id: 3, name: 'Avis 3', content: 'Contenu de l\'avis 3' },
+    { id: 4, name: 'Avis 4', content: 'Contenu de l\'avis 4' },
+    { id: 5, name: 'Avis 5', content: 'Contenu de l\'avis 5' },
+    { id: 6, name: 'Avis 6', content: 'Contenu de l\'avis 6' }
   ];
 
   const handleNextSlide = () => {
@@ -18,17 +21,19 @@ const Slider: React.FC = () => {
     setCurrentSlide(prevSlide => (prevSlide === 1 ? slides.length : prevSlide - 1));
   };
 
+  const offset = (currentSlide - 1) * -50;
+
   return (
     <div className="relative overflow-hidden">
       <div className="slider-container">
         <button onClick={handlePrevSlide} className="slider-arrow left-arrow">
           <Image src="/flechetemoin.png" alt="Previous" width={50} height={50} />
         </button>
-        <div className="slider-content-wrapper">
+        <div className="slider-content-wrapper" style={{ transform: `translateX(${offset}%)` }}>
           {slides.map(slide => (
             <div
               key={slide.id}
-              className={`slider-content ${currentSlide === slide.id ? 'active' : ''}`}
+              className="slider-content"
             >
               <div className="slide-card">
                 <p className="slide-name">{slide.name}</p>

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container logoFooter">
           <Image
             className="max-w-full"
-            src="/LOGO_DELIRIUM.png"
+            src="/logo_final.svg"
             alt="logo"
             width={142}
             height={247}
