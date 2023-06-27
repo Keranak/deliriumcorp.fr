@@ -509,6 +509,8 @@ footer section{
     font-size: 4rem;
   }
   
-
+.slider-content{
+  width: 30%;
+}
   
 }
