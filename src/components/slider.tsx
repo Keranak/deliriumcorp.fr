@@ -10,7 +10,10 @@ const Slider: React.FC = () => {
     { id: 3, name: 'Avis 3', content: 'Contenu de l\'avis 3' },
     { id: 4, name: 'Avis 4', content: 'Contenu de l\'avis 4' },
     { id: 5, name: 'Avis 5', content: 'Contenu de l\'avis 5' },
-    { id: 6, name: 'Avis 6', content: 'Contenu de l\'avis 6' }
+    { id: 6, name: 'Avis 6', content: 'Contenu de l\'avis 6' },
+    { id: 7, name: 'Avis 7', content: 'Contenu de l\'avis 7' },
+    { id: 8, name: 'Avis 8', content: 'Contenu de l\'avis 8' },
+    { id: 9, name: 'Avis 9', content: 'Contenu de l\'avis 9' }
   ];
 
   const handleNextSlide = () => {
