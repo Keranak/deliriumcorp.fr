@@ -7,14 +7,14 @@ const Footer = () => {
       <section id='bottom' className="flex justify-center items-center flex-col">
         <div className="container logoFooter">
           <Image
-            className="max-w-full"
+            className="max-w-full items-center"
             src="/logo_final.svg"
             alt="logo"
-            width={142}
-            height={247}
+            width={100}
+            height={100}
           />
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 w-auto p-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 w-auto p-4 linkSocial'>
           <div className='w-full'>
             <ul id="links" className="text-lg">
               <li>

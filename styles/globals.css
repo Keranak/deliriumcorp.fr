@@ -374,6 +374,8 @@ footer section{
   font-size: 14px;
 }
 
+
+
 @media (min-width: 768px) {
   .slider-content-wrapper {
     flex-wrap: nowrap;
@@ -394,6 +396,7 @@ footer section{
   .video{
     display: unset;
     vertical-align: middle;
+    border-radius: 25px;
   }
 
   .waveBottom::after{
