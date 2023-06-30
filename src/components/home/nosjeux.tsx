@@ -31,7 +31,7 @@ function NosJeux(){
       
 
       <p className="buttonp">
-        <Link href="/nos-jeux" className="button"> Tout découvrir </Link>
+        <Link href="/Games" className="button"> Tout découvrir </Link>
       </p>
     
     </section>
