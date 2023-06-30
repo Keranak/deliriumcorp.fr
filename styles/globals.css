@@ -390,6 +390,10 @@ footer section{
 
 /*DESKTOP*/
 @media (min-width:769px){
+  .videoIframe{
+    width: 560px;
+  }
+
   *{
     text-align: center;
   }
@@ -528,4 +532,8 @@ footer section{
 
 .contactSection{
   margin-bottom: 35px;
+}
+
+.videoIframe{
+  width: auto;
 }
