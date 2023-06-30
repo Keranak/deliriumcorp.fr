@@ -1,6 +1,6 @@
 import Header from '@/src/components/header';
 import Head from 'next/head';
-import NosJeux from '@/src/components/home/nosjeux'
+import NosJeux from '@/src/components/tousjeux'
 
 
 export default function Games(){
