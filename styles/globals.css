@@ -535,5 +535,5 @@ footer section{
 }
 
 .videoIframe{
-  width: auto;
+  width: 75% !important;
 }
