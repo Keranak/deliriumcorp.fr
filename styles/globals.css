@@ -517,3 +517,15 @@ footer section{
 }
   
 }
+.contact{
+  padding-bottom: 50px !important;
+  z-index: 0;
+}
+.mailto{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contactSection{
+  margin-bottom: 35px;
+}

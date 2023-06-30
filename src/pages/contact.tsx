@@ -4,9 +4,12 @@ import Header from "../components/header";
 
 export default function contact(){
     return <>
-        <h1 className="AdrenalineTitle">Nous contacter</h1>
+    <Head>Nous contacter - DeliriumCorp</Head>
+    <Header/>
+    <section className="container p-10 contactSection">
+        <h1 className="sectionTitle contact">Nous contacter</h1>
         
-        <a href="mailto:contactsaphiragency@gmail.com" target="_blank" className="button" >Nous envoyer un mail</a>
-
+        <a href="mailto:contactsaphiragency@gmail.com" target="_blank" className="button p-20 mailto" >Nous envoyer un mail</a>
+        </section>
     </>
 }
